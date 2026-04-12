@@ -1,0 +1,22 @@
+# Terraform 로컬 디렉토리 및 파일
+# .terraform.lock.hcl은 팀 협업 시 플러그인 버전을 고정하기 위해 git에 포함시키는 경우도 있음
+.terraform/
+.terraform.lock.hcl 
+
+# 상태 파일
+*.tfstate
+*.tfstate.backup
+
+# 변수 파일 (시크릿 포함 가능)
+*.tfvars
+*.tfvars.json
+
+# 크래시 로그
+crash.log
+crash.*.log
+
+# 플랜 파일
+*.tfplan
+
+# macOS
+.DS_Store
